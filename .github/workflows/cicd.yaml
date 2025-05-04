@@ -36,6 +36,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Clean Go mod cache
+        run: go clean -modcache
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
