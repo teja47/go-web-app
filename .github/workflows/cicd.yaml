@@ -89,10 +89,6 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
 
-    - name: Update tag in Helm chart
-      run: |
-        sed -i 's/tag: .*/tag: "${{github.run_id}}"/' go-web-app-chart/values.yaml
-
     - name: Commit and push changes
       run: |
         git config --global user.email "teja47470303@gmail.com"
