@@ -93,6 +93,6 @@ jobs:
       run: |
         git config --global user.email "teja47470303@gmail.com"
         git config --global user.name "Teja bhathala"
-        git commit -m "Update tag in Helm chart"
+        git commit -m "Auto-commit" || echo "Nothing to commit"
         git push
 
